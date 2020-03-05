@@ -19,6 +19,9 @@ namespace Part_6._5
         int Win = 0;
         int Loss = 0;
         int Tie = 0;
+        //1 = Rock
+        //2 = Paper
+        //3 = Scissor
 
         private void lblYourChoice_Click(object sender, EventArgs e)
         {
