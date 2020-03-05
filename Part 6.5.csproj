@@ -116,5 +116,14 @@
   <ItemGroup>
     <None Include="Resources\scissor.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equal symbol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greater than.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\less than.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

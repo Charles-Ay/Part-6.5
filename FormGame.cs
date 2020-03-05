@@ -43,6 +43,8 @@ namespace Part_6._5
                 lblResult.Text = "You Tie";
                 Tie += 1;
                 lblTie.Text = $"Ties: {Tie}";
+                imgComp.Image = Properties.Resources.rock_2;
+                imgSymbol.Image = Properties.Resources.equal_symbol;
             }
             else if (comp == 2)
             {
@@ -51,6 +53,8 @@ namespace Part_6._5
                 lblResult.Text = "You Lose";
                 Loss += 1;
                 lblLoss.Text = $"Loss: {Loss}";
+                imgComp.Image = Properties.Resources.paper;
+                imgSymbol.Image = Properties.Resources.less_than;
             }
             else
             {
@@ -59,6 +63,9 @@ namespace Part_6._5
                 lblResult.Text = "You Win";
                 Win += 1;
                 lblWin.Text = $"Wins: {Win}";
+                imgComp.Image = Properties.Resources.scissor;
+                imgSymbol.Image = Properties.Resources.greater_than;
+
             }
 
         }
@@ -78,6 +85,8 @@ namespace Part_6._5
                 lblResult.Text = "You Win";
                 Win += 1;
                 lblWin.Text = $"Wins: {Win}";
+                imgComp.Image = Properties.Resources.rock_2;
+                imgSymbol.Image = Properties.Resources.greater_than;
             }
             else if (comp == 2)
             {
@@ -86,6 +95,8 @@ namespace Part_6._5
                 lblResult.Text = "You Tie";
                 Tie += 1;
                 lblTie.Text = $"Ties: {Tie}";
+                imgComp.Image = Properties.Resources.paper;
+                imgSymbol.Image = Properties.Resources.equal_symbol;
             }
             else
             {
@@ -94,6 +105,8 @@ namespace Part_6._5
                 lblResult.Text = "You Lose";
                 Loss += 1;
                 lblLoss.Text = $"Losses: {Loss}";
+                imgComp.Image = Properties.Resources.scissor;
+                imgSymbol.Image = Properties.Resources.less_than;
             }
 
         }
@@ -113,6 +126,9 @@ namespace Part_6._5
                 lblResult.Text = "You Lose";
                 Loss += 1;
                 lblLoss.Text = $"Losses: {Loss}";
+                imgComp.Image = Properties.Resources.rock_2;
+                imgSymbol.Image = Properties.Resources.less_than;
+
             }
             else if (comp == 2)
             {
@@ -121,6 +137,8 @@ namespace Part_6._5
                 lblResult.Text = "You Win";
                 Win += 1;
                 lblWin.Text = $"Wins: {Win}";
+                imgComp.Image = Properties.Resources.paper;
+                imgSymbol.Image = Properties.Resources.greater_than;
             }
             else
             {
@@ -129,6 +147,8 @@ namespace Part_6._5
                 lblResult.Text = "You Tie";
                 Tie += 1;
                 lblTie.Text = $"Ties: {Tie}";
+                imgComp.Image = Properties.Resources.scissor;
+                imgSymbol.Image = Properties.Resources.equal_symbol;
             }
         }
 
@@ -158,6 +178,11 @@ namespace Part_6._5
             frmStart f2 = new frmStart();
             f2.ShowDialog();
             this.Close();
+        }
+
+        private void imgComp_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

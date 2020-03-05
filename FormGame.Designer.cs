@@ -40,7 +40,11 @@
             this.imgPlayer = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.imgComp = new System.Windows.Forms.PictureBox();
+            this.imgSymbol = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgPlayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgSymbol)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRock
@@ -145,9 +149,9 @@
             // imgPlayer
             // 
             this.imgPlayer.BackColor = System.Drawing.Color.Transparent;
-            this.imgPlayer.Location = new System.Drawing.Point(312, 123);
+            this.imgPlayer.Location = new System.Drawing.Point(308, 130);
             this.imgPlayer.Name = "imgPlayer";
-            this.imgPlayer.Size = new System.Drawing.Size(176, 136);
+            this.imgPlayer.Size = new System.Drawing.Size(116, 113);
             this.imgPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgPlayer.TabIndex = 9;
             this.imgPlayer.TabStop = false;
@@ -166,7 +170,7 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Ravie", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(421, 343);
+            this.btnBack.Location = new System.Drawing.Point(582, 308);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(87, 59);
             this.btnBack.TabIndex = 11;
@@ -174,12 +178,35 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // imgComp
+            // 
+            this.imgComp.BackColor = System.Drawing.Color.Transparent;
+            this.imgComp.Location = new System.Drawing.Point(553, 130);
+            this.imgComp.Name = "imgComp";
+            this.imgComp.Size = new System.Drawing.Size(116, 113);
+            this.imgComp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgComp.TabIndex = 12;
+            this.imgComp.TabStop = false;
+            this.imgComp.Click += new System.EventHandler(this.imgComp_Click);
+            // 
+            // imgSymbol
+            // 
+            this.imgSymbol.BackColor = System.Drawing.Color.Transparent;
+            this.imgSymbol.Location = new System.Drawing.Point(431, 130);
+            this.imgSymbol.Name = "imgSymbol";
+            this.imgSymbol.Size = new System.Drawing.Size(116, 113);
+            this.imgSymbol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgSymbol.TabIndex = 13;
+            this.imgSymbol.TabStop = false;
+            // 
             // frmRPS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Part_6._5.Properties.Resources.RPS;
-            this.ClientSize = new System.Drawing.Size(520, 414);
+            this.ClientSize = new System.Drawing.Size(681, 379);
+            this.Controls.Add(this.imgSymbol);
+            this.Controls.Add(this.imgComp);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.imgPlayer);
@@ -196,6 +223,8 @@
             this.Text = "Rock, Paper, Scissors Game";
             this.Load += new System.EventHandler(this.frmRPS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgPlayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgSymbol)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,6 +244,8 @@
         private System.Windows.Forms.PictureBox imgPlayer;
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.PictureBox imgComp;
+        private System.Windows.Forms.PictureBox imgSymbol;
     }
 }
 
